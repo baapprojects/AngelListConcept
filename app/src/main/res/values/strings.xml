@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">AngelListConcept</string>
+    <string name="app_name">Angellist job search</string>
     <string name="search_job_title">Android Developer</string>
     <string name="set_job_location">San Francisco, CA</string>
     <string name="position">%1$s (%2$s)</string>
@@ -24,6 +24,14 @@
     <string name="hint_email">Email: xyz@me.com</string>
     <string name="hint_phone">Phone: (917) 123-4567</string>
     <string name="popup_info_text">The recruiter will get an email with your contact info and a link to your profile</string>
-    <string name="btn_submit_application">Submit Application</string>
+    <string name="submit_application">Submit Application</string>
     <string name="submit_thanku_msg">Thank you...!! Your application has been submitted.</string>
+    <string name="autolist">Autolist</string>
+    <string name="ava">Ava</string>
+    <string name="foursquare">Foursquare</string>
+    <string name="instacart">Instacart</string>
+    <string name="pixtured">Pixtured</string>
+    <string name="seesaw">Seesaw</string>
+    <string name="android_developer">Android developer</string>
+    <string name="mobile_developer">Mobile developer</string>
 </resources>

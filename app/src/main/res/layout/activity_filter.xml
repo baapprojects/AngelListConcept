@@ -115,5 +115,157 @@
         android:layout_height="@dimen/horizontal_line_height_large"
         android:layout_marginTop="@dimen/margin_top_small"
         android:background="@color/colorDivider" />
+
+        <!-- Place holder view for companies, ideally a grid view with companies should be displayed -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/llHolder1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/margin_top_large">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginRight="@dimen/company_margin">
+                         <ImageView
+                             android:layout_centerHorizontal="true"
+                             android:id="@+id/ivCompanyLogo"
+                             android:layout_width="@dimen/filter_company_size"
+                             android:layout_height="@dimen/filter_company_size"
+                             android:src="@drawable/al"/>
+
+                        <TextView
+                            android:layout_centerHorizontal="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/autolist"
+                            android:layout_marginTop="@dimen/margin_top_location_detail"
+                            android:layout_below="@+id/ivCompanyLogo"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginRight="@dimen/company_margin">
+                        <ImageView
+                            android:layout_centerHorizontal="true"
+                            android:id="@+id/ivCompanyLogo"
+                            android:layout_width="@dimen/filter_company_size"
+                            android:layout_height="@dimen/filter_company_size"
+                            android:src="@drawable/ava"/>
+
+                        <TextView
+                            android:layout_centerHorizontal="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ava"
+                            android:layout_marginTop="@dimen/margin_top_location_detail"
+                            android:layout_below="@+id/ivCompanyLogo"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+                        <ImageView
+                            android:layout_centerHorizontal="true"
+                            android:id="@+id/ivCompanyLogo"
+                            android:layout_width="@dimen/filter_company_size"
+                            android:layout_height="@dimen/filter_company_size"
+                            android:src="@drawable/fs"/>
+
+                        <TextView
+                            android:layout_centerHorizontal="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/foursquare"
+                            android:layout_marginTop="@dimen/margin_top_location_detail"
+                            android:layout_below="@+id/ivCompanyLogo"/>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_below="@+id/llHolder1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/margin_top_large">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginRight="@dimen/company_margin">
+                        <ImageView
+                            android:layout_centerHorizontal="true"
+                            android:id="@+id/ivCompanyLogo"
+                            android:layout_width="@dimen/filter_company_size"
+                            android:layout_height="@dimen/filter_company_size"
+                            android:src="@drawable/instac"/>
+
+                        <TextView
+                            android:layout_centerHorizontal="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/instacart"
+                            android:layout_marginTop="@dimen/margin_top_location_detail"
+                            android:layout_below="@+id/ivCompanyLogo"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginRight="@dimen/company_margin">
+                        <ImageView
+                            android:layout_centerHorizontal="true"
+                            android:id="@+id/ivCompanyLogo"
+                            android:layout_width="@dimen/filter_company_size"
+                            android:layout_height="@dimen/filter_company_size"
+                            android:src="@drawable/pixt"/>
+
+                        <TextView
+                            android:layout_centerHorizontal="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/pixtured"
+                            android:layout_marginTop="@dimen/margin_top_location_detail"
+                            android:layout_below="@+id/ivCompanyLogo"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+                        <ImageView
+                            android:layout_centerHorizontal="true"
+                            android:id="@+id/ivCompanyLogo"
+                            android:layout_width="@dimen/filter_company_size"
+                            android:layout_height="@dimen/filter_company_size"
+                            android:src="@drawable/seesaw"/>
+
+                        <TextView
+                            android:layout_centerHorizontal="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/seesaw"
+                            android:layout_marginTop="@dimen/margin_top_location_detail"
+                            android:layout_below="@+id/ivCompanyLogo"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+        </ScrollView>
     </LinearLayout>
 </RelativeLayout>

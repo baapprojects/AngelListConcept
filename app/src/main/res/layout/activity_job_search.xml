@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.binarybricks.pragya.angellistconcept.JobSearchActivity">
 
     <android.support.v7.widget.Toolbar
@@ -14,11 +15,6 @@
         android:minHeight="?attr/actionBarSize"
         app:titleTextColor="@android:color/white"/>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/toolbar"
-        android:orientation="vertical">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -82,14 +78,99 @@
                 android:text="@string/past_job_search"
                 android:textSize="@dimen/past_job_search_size" />
 
-            <ListView
-                android:id="@+id/lvPastJobSearch"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+            <!-- A placeholder scroll view, ideally this should be listview with recent searches -->
+            <ScrollView
                 android:layout_below="@+id/tvPastJob"
-                android:divider="@android:color/transparent"
-                android:dividerHeight="@dimen/list_divider_height"
-                android:visibility="visible" />
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/ivRecent"
+                            android:layout_width="@dimen/recent_history_image_size"
+                            android:layout_height="@dimen/recent_history_image_size"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="@dimen/margin_top_medium"
+                            android:tint="#000000"
+                            android:src="@android:drawable/ic_menu_recent_history" />
+
+                        <LinearLayout
+                            android:layout_toRightOf="@+id/ivRecent"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:id="@+id/tvCompanyName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/colorPrimaryText"
+                                android:textSize="@dimen/filter_company_text_size"
+                                android:text="@string/android_developer" />
+
+                            <TextView
+                                android:id="@+id/tvJobTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:textColor="@color/colorSecondaryText"
+                                android:text="@string/set_job_location" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_marginTop="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/ivRecent"
+                            android:layout_width="@dimen/recent_history_image_size"
+                            android:layout_height="@dimen/recent_history_image_size"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="@dimen/margin_top_medium"
+                            android:tint="#000000"
+                            android:src="@android:drawable/ic_menu_recent_history" />
+
+                        <LinearLayout
+                            android:layout_toRightOf="@+id/ivRecent"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:id="@+id/tvCompanyName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/colorPrimaryText"
+                                android:textSize="@dimen/filter_company_text_size"
+                                android:text="@string/mobile_developer" />
+
+                            <TextView
+                                android:id="@+id/tvJobTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:textColor="@color/colorSecondaryText"
+                                android:text="@string/set_job_location" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </ScrollView>
         </RelativeLayout>
-    </LinearLayout>
-</RelativeLayout>
+</LinearLayout>

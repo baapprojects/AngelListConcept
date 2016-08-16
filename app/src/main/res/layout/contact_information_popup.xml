@@ -48,7 +48,7 @@
         android:textSize="@dimen/contact_info_text"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="@dimen/contact_info_margin_top"
-        android:text="@string/btn_submit_application"
+        android:text="@string/submit_application"
         android:textAllCaps="false"
         android:background="@color/colorAccent"
         android:textColor="@color/colorTextIcons"

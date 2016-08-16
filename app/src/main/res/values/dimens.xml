@@ -32,4 +32,7 @@
     <dimen name="drawable_padding">2dp</dimen>
     <dimen name="contact_info_text">20sp</dimen>
     <dimen name="contact_info_margin_top">28dp</dimen>
+    <dimen name="company_margin">8dp</dimen>
+    <dimen name="filter_company_size">64dp</dimen>
+    <dimen name="recent_history_image_size">32dp</dimen>
 </resources>
