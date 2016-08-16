@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:background="?attr/colorPrimary"
         android:minHeight="?attr/actionBarSize"
-        app:titleTextColor="@android:color/white"></android.support.v7.widget.Toolbar>
+        app:titleTextColor="@android:color/white"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -26,21 +26,21 @@
             android:layout_weight="2"
             android:background="@drawable/job_search_background"
             android:gravity="center_vertical"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp">
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin">
 
 
             <EditText
                 android:id="@+id/etSearchJobTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="12dp"
-                android:drawablePadding="8dp"
+                android:layout_margin="@dimen/margin_top_medium"
+                android:drawablePadding="@dimen/padding_small"
                 android:drawableLeft="@android:drawable/ic_menu_search"
                 android:hint="@string/search_job_title"
                 android:textColor="@color/colorTextIcons"
                 android:textColorHint="@color/colorDivider"
-                android:textSize="24dp" />
+                android:textSize="@dimen/search_job_title_size" />
 
 
             <EditText
@@ -48,14 +48,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/etSearchJobTitle"
-                android:layout_margin="12dp"
-                android:drawablePadding="8dp"
+                android:layout_margin="@dimen/margin_top_medium"
+                android:drawablePadding="@dimen/padding_small"
                 android:drawableLeft="@android:drawable/ic_menu_compass"
                 android:hint="@string/set_job_location"
                 android:textColor="@color/colorTextIcons"
                 android:textColorHint="@color/colorDivider"
-                android:textSize="24dp" />
-
+                android:textSize="@dimen/search_location_size" />
 
             <Button
                 android:id="@+id/btnSearch"
@@ -63,10 +62,10 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/etSetLocation"
                 android:layout_centerInParent="true"
-                android:background="#8C455A64"
-                android:layout_marginRight="12dp"
-                android:layout_marginLeft="12dp"
-                android:text="Search"
+                android:background="@color/colorSearchBackground"
+                android:layout_marginRight="@dimen/margin_top_medium"
+                android:layout_marginLeft="@dimen/margin_top_medium"
+                android:text="@string/search_button_text"
                 android:textColor="@color/colorTextIcons" />
         </RelativeLayout>
 
@@ -79,9 +78,9 @@
                 android:id="@+id/tvPastJob"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="12dp"
-                android:text="Past Job search"
-                android:textSize="20dp" />
+                android:layout_margin="@dimen/margin_top_medium"
+                android:text="@string/past_job_search"
+                android:textSize="@dimen/past_job_search_size" />
 
             <ListView
                 android:id="@+id/lvPastJobSearch"
@@ -89,7 +88,7 @@
                 android:layout_height="match_parent"
                 android:layout_below="@+id/tvPastJob"
                 android:divider="@android:color/transparent"
-                android:dividerHeight="4dp"
+                android:dividerHeight="@dimen/list_divider_height"
                 android:visibility="visible" />
         </RelativeLayout>
     </LinearLayout>

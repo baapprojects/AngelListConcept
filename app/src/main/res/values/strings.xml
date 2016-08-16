@@ -3,4 +3,27 @@
     <string name="search_job_title">Android Developer</string>
     <string name="set_job_location">San Francisco, CA</string>
     <string name="position">%1$s (%2$s)</string>
+    <string name="filter_activity_title">Filter</string>
+    <string name="progress_getting_job_detail">Getting Job Details...</string>
+    <string name="job_search_activity_title">AngelList</string>
+    <string name="progrees_finding_job">Finding Jobs...</string>
+    <string name="search_result_activity_title">Search Results</string>
+    <string name="filter_sort_by">SORT BY</string>
+    <string name="radio_most_recent">Most Recent</string>
+    <string name="radio_most_relevant">Most Relevant</string>
+    <string name="filter_location">LOCATION</string>
+    <string name="location_san_francisco_ca">San Francisco, CA</string>
+    <string name="location_within_25_miles">within 25 miles</string>
+    <string name="filter_company">COMPANY</string>
+    <string name="job_detail_jobs">JOBS</string>
+    <string name="apply_button_text">Apply</string>
+    <string name="job_detail_product">PRODUCT</string>
+    <string name="job_detail_tech">TECH</string>
+    <string name="search_button_text">Search</string>
+    <string name="past_job_search">Past Job search</string>
+    <string name="hint_email">Email: xyz@me.com</string>
+    <string name="hint_phone">Phone: (917) 123-4567</string>
+    <string name="popup_info_text">The recruiter will get an email with your contact info and a link to your profile</string>
+    <string name="btn_submit_application">Submit Application</string>
+    <string name="submit_thanku_msg">Thank you...!! Your application has been submitted.</string>
 </resources>

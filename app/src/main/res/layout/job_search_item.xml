@@ -4,14 +4,14 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
-    android:padding="12dp">
+    android:padding="@dimen/padding_medium">
 
     <ImageView
         android:id="@+id/ivCompanyLogo"
-        android:layout_width="64dp"
-        android:layout_height="64dp"
+        android:layout_width="@dimen/search_result_company_logo_size"
+        android:layout_height="@dimen/search_result_company_logo_size"
         android:layout_gravity="center_vertical"
-        android:layout_marginRight="12dp"
+        android:layout_marginRight="@dimen/margin_top_medium"
         android:src="@mipmap/ic_launcher" />
 
     <LinearLayout
@@ -26,7 +26,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/colorPrimaryText"
-            android:textSize="20dp"
+            android:textSize="@dimen/filter_company_text_size"
             tools:text="Angel List" />
 
         <TextView
@@ -34,20 +34,20 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/colorPrimaryText"
-            android:textSize="16dp"
+            android:textSize="@dimen/result_job_title_size"
             tools:text="Android Developer" />
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="2dp"
-            android:layout_marginTop="4dp">
+            android:layout_marginBottom="@dimen/margin_bottom_job_detail_relative_layout"
+            android:layout_marginTop="@dimen/margin_top_location_detail">
 
             <TextView
                 android:id="@+id/tvJobSalary"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="8dp"
+                android:layout_marginRight="@dimen/margin_top_small"
                 android:textColor="@color/colorSecondaryText"
                 tools:text="$60K - $80K" />
 
@@ -68,7 +68,7 @@
                 android:id="@+id/tvJobLocation"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="8dp"
+                android:layout_marginRight="@dimen/margin_top_small"
                 android:drawableLeft="@drawable/location_small"
                 android:textColor="@color/colorSecondaryText"
                 tools:text="San Francisco, CA" />
@@ -79,7 +79,7 @@
                 android:layout_height="wrap_content"
                 android:layout_toRightOf="@+id/tvJobLocation"
                 android:drawableLeft="@drawable/team"
-                android:drawablePadding="2dp"
+                android:drawablePadding="@dimen/drawable_padding"
                 android:maxLines="1"
                 android:textColor="@color/colorSecondaryText"
                 tools:text="1-20 employees" />

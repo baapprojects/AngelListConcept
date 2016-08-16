@@ -29,6 +29,11 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".JobSearchResult" />
         </activity>
+        <activity android:name=".FilterActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".JobSearchResult" />
+        </activity>
     </application>
 
 </manifest>

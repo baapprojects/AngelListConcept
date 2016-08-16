@@ -49,9 +49,9 @@ public class JobSearchResult extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        getSupportActionBar().setTitle("Search Results");
+        getSupportActionBar().setTitle(R.string.search_result_activity_title);
 
-        progress = ProgressDialog.show(JobSearchResult.this, "","Finding Jobs...",true);
+        progress = ProgressDialog.show(JobSearchResult.this, "",getString(R.string.progrees_finding_job),true);
 
         String title = getIntent().getStringExtra("job_title");
         String location = getIntent().getStringExtra("job_location");
@@ -99,7 +99,8 @@ public class JobSearchResult extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == R.id.filter){
-
+            Intent filterIntent = new Intent(JobSearchResult.this, FilterActivity.class);
+            startActivity(filterIntent);
         }
         return super.onOptionsItemSelected(item);
     }

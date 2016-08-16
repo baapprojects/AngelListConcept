@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
@@ -12,8 +12,7 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        >
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -26,20 +25,21 @@
                 android:layout_height="wrap_content"
                 android:background="?attr/colorPrimary"
                 android:minHeight="?attr/actionBarSize"
-                app:titleTextColor="@android:color/white"/>
+                app:titleTextColor="@android:color/white" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="2"
                 android:background="@color/colorPrimary"
                 android:gravity="center_horizontal"
-                android:paddingBottom="16dp"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/activity_horizontal_margin">
 
                 <ImageView
                     android:id="@+id/ivCompanyLogo"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
+                    android:layout_width="@dimen/job_detail_logo"
+                    android:layout_height="@dimen/job_detail_logo"
                     tools:src="@mipmap/ic_launcher" />
 
                 <TextView
@@ -47,7 +47,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/ivCompanyLogo"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginTop="@dimen/margin_top_small"
                     android:textColor="@color/colorTextIcons"
                     tools:text="Company Name" />
 
@@ -55,63 +55,63 @@
                     android:id="@+id/tvTagLine"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="@dimen/margin_top_small"
                     android:gravity="center_horizontal"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginRight="16dp"
                     android:textColor="@color/colorTextIcons"
                     tools:text="Tag Line" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="12dp"
-                    android:layout_marginRight="16dp"
-                    android:layout_marginLeft="16dp"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="@dimen/margin_top_medium"
                     android:background="@color/colorPrimaryDark"
                     android:orientation="horizontal">
 
                     <TextView
+                        android:id="@+id/tvJobLocation1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:id="@+id/tvJobLocation1"
-                       android:gravity="center"
-                        android:padding="8dp"
+                        android:gravity="center"
+                        android:padding="@dimen/padding_small"
                         android:textColor="@color/colorTextIcons"
                         tools:text="Location" />
 
                     <View
-                        android:layout_width="1dp"
+                        android:layout_width="@dimen/horizontal_line_small"
                         android:layout_height="match_parent"
-                        android:background="@android:color/white"
-                        android:layout_marginTop="12dp"
-                        android:layout_marginBottom="12dp"/>
+                        android:layout_marginBottom="@dimen/margin_top_medium"
+                        android:layout_marginTop="@dimen/margin_top_medium"
+                        android:background="@android:color/white" />
 
                     <TextView
+                        android:id="@+id/tvNoOfEmployees"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:id="@+id/tvNoOfEmployees"
                         android:layout_weight="1"
                         android:gravity="center"
-                        android:padding="8dp"
+                        android:padding="@dimen/padding_small"
                         android:textColor="@color/colorTextIcons"
                         tools:text="No of Employees" />
 
                     <View
-                        android:layout_width="1dp"
+                        android:layout_width="@dimen/horizontal_line_small"
                         android:layout_height="match_parent"
-                        android:background="@android:color/white"
-                        android:layout_marginTop="12dp"
-                        android:layout_marginBottom="12dp"/>
+                        android:layout_marginBottom="@dimen/margin_top_medium"
+                        android:layout_marginTop="@dimen/margin_top_medium"
+                        android:background="@android:color/white" />
 
                     <TextView
+                        android:id="@+id/tvPeopleApplied1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:id="@+id/tvPeopleApplied1"
                         android:gravity="center"
-                        android:padding="8dp"
+                        android:padding="@dimen/padding_small"
                         android:textColor="@color/colorTextIcons"
                         tools:text="People Applied" />
                 </LinearLayout>
@@ -120,44 +120,59 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_margin="16dp"
+                android:layout_margin="@dimen/activity_horizontal_margin"
                 android:layout_weight="2"
                 android:orientation="vertical">
 
-                <TextView
+                <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
-                    android:text="JOBS"
-                    android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:layout_height="wrap_content">
 
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/job_detail_jobs"
+                        android:textSize="@dimen/job_detail_heading_text_size"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btnApply"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@color/colorAccent"
+                        android:text="@string/apply_button_text"
+                        android:textColor="@color/colorTextIcons"
+                        android:textSize="@dimen/apply_text_size" />
+                </RelativeLayout>
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@color/colorDivider"
-                    android:minHeight="1dp" />
+                    android:layout_height="@dimen/horizontal_line_small"
+                    android:layout_marginTop="@dimen/margin_top_small"
+                    android:background="@color/colorDivider" />
 
                 <TextView
                     android:id="@+id/tvJobTitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:textSize="18dp"
+                    android:layout_marginTop="@dimen/margin_top_large"
+                    android:textSize="@dimen/detail_job_title_size"
                     android:textStyle="bold"
                     tools:text="Android Developer" />
 
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="2dp"
-                    android:layout_marginTop="8dp">
+                    android:layout_marginBottom="@dimen/margin_bottom_job_detail_relative_layout"
+                    android:layout_marginTop="@dimen/margin_top_small">
 
                     <TextView
                         android:id="@+id/tvJobSalary"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginRight="12dp"
+                        android:layout_marginRight="@dimen/margin_top_medium"
                         tools:text="$60K - $80K" />
 
                     <TextView
@@ -171,13 +186,13 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="4dp">
+                    android:layout_marginTop="@dimen/margin_top_location_detail">
 
                     <TextView
                         android:id="@+id/tvJobType"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginRight="12dp"
+                        android:layout_marginRight="@dimen/margin_top_medium"
                         android:textColor="@color/colorSecondaryText"
                         tools:text="Full Time" />
 
@@ -185,7 +200,7 @@
                         android:id="@+id/tvJobLocation"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginRight="12dp"
+                        android:layout_marginRight="@dimen/margin_top_medium"
                         android:layout_toRightOf="@+id/tvJobType"
                         android:textColor="@color/colorSecondaryText"
                         tools:text="San Francisco, CA" />
@@ -203,49 +218,47 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
-                    android:layout_marginTop="12dp"
-                    android:text="PRODUCT"
-                    android:textSize="20dp"
+                    android:layout_marginBottom="@dimen/margin_top_small"
+                    android:layout_marginTop="@dimen/margin_top_medium"
+                    android:text="@string/job_detail_product"
+                    android:textSize="@dimen/job_detail_heading_text_size"
                     android:textStyle="bold" />
 
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@color/colorDivider"
-                    android:minHeight="1dp" />
+                    android:layout_height="@dimen/horizontal_line_small"
+                    android:background="@color/colorDivider" />
 
                 <TextView
                     android:id="@+id/tvProduct"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="12dp"
-                    android:layout_marginTop="12dp"
-                    android:textSize="16dp"
+                    android:layout_marginBottom="@dimen/margin_top_medium"
+                    android:layout_marginTop="@dimen/margin_top_medium"
+                    android:textSize="@dimen/product_detail_size"
                     tools:text="Product Detail" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
-                    android:layout_marginTop="12dp"
-                    android:text="TECH"
-                    android:textSize="20dp"
+                    android:layout_marginBottom="@dimen/margin_top_small"
+                    android:layout_marginTop="@dimen/margin_top_medium"
+                    android:text="@string/job_detail_tech"
+                    android:textSize="@dimen/job_detail_heading_text_size"
                     android:textStyle="bold" />
 
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@color/colorDivider"
-                    android:minHeight="1dp" />
+                    android:layout_height="@dimen/horizontal_line_small"
+                    android:background="@color/colorDivider" />
 
                 <TextView
                     android:id="@+id/tvTech"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="12dp"
-                    android:layout_marginTop="12dp"
-                    android:textSize="16dp"
+                    android:layout_marginBottom="@dimen/margin_top_medium"
+                    android:layout_marginTop="@dimen/margin_top_medium"
+                    android:textSize="@dimen/product_detail_size"
                     tools:text="Tech Detail" />
 
             </LinearLayout>

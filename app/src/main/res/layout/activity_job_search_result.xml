@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:background="?attr/colorPrimary"
         android:minHeight="?attr/actionBarSize"
-        app:titleTextColor="@android:color/white"></android.support.v7.widget.Toolbar>
+        app:titleTextColor="@android:color/white"/>
 
     <ListView
         android:layout_width="match_parent"
@@ -20,7 +20,7 @@
         android:id="@+id/lvJobSearchResult"
         android:layout_below="@+id/toolbar"
         android:divider="@color/colorDivider"
-        android:dividerHeight="1dp"
+        android:dividerHeight="@dimen/divider_height_small"
         android:visibility="visible" />
 
 </RelativeLayout>

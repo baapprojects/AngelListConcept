@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:id="@+id/llContactInfoPopup">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contact Information"
+        android:textSize="@dimen/contact_info_text"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_email"
+        android:textSize="@dimen/contact_info_text"
+        android:backgroundTint="@color/colorDivider"
+        android:textColorHint="@color/colorDivider"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="@dimen/contact_info_margin_top"/>
+
+    <EditText
+        android:id="@+id/etPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_phone"
+        android:textSize="@dimen/contact_info_text"
+        android:backgroundTint="@color/colorDivider"
+        android:textColorHint="@color/colorDivider"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/popup_info_text"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="@dimen/contact_info_margin_top"/>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/contact_info_text"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/contact_info_margin_top"
+        android:text="@string/btn_submit_application"
+        android:textAllCaps="false"
+        android:background="@color/colorAccent"
+        android:textColor="@color/colorTextIcons"
+        />
+</LinearLayout>

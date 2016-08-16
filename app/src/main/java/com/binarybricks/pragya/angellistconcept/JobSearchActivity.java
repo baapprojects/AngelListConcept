@@ -32,7 +32,7 @@ public class JobSearchActivity extends AppCompatActivity {
         ButterKnife.bind(this);
         setSupportActionBar(toolbar);
 
-        getSupportActionBar().setTitle("Angellist");
+        getSupportActionBar().setTitle(R.string.job_search_activity_title);
 
     }
 
